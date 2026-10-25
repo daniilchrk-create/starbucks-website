@@ -1,30 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starbuks landing</title>
     <link rel="stylesheet" href="style.css">
-    
+
+
+
+    <style>
+        .stats__item span {
+            content: "+";
+            color: #fff;
+            font-size: 40px;
+
+        }
+
+        .stats__item span::after {
+            font-size: 24px;
+            content: "+";
+            color: green;
+        }
+    </style>
 </head>
+
 <body>
-    
-<header class="header">
-    <div class="container">
-        <a href="#!" class="logo header_logo">Starbucks</a>
-        
-        <nav class="header__nav">
 
-            <ul>
-                <a href="#!" class="header__link">Home</a>
-                <a href="#!" class="header__link">Select</a>
-                <a href="#!" class="header__link">Shop</a>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <header class="header">
+        <div class="container">
+            <a href="#!" class="logo text-gradient header_logo">Starbucks</a>
 
-    
+            <nav class="header__nav">
+
+                <ul>
+                    <a href="#!" class="header__link">Home</a>
+                    <a href="#!" class="header__link">Select</a>
+                    <a href="#!" class="header__link">Shop</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="welcome">
+            <div class="container">
+                <div class="welcome__desck">
+                    <h1 class="title welcome__title">New Cafe <br>by <span class="text-gradient">StarBucks</span></h1>
+                    <p slass="welcome__text">
+                        Have time to buy the most harmonious drinks in the <br>
+                        new Starbucks coffee and don't forget about the discount!
+                    </p>
+                    <div class="welcome__btn-wrapper">
+                        <a href="#!" class="btn">Select a coffee</a>
+                        <a href="#!" class="link">More</a>
+                    </div>
+                    <div class="stats">
+                        <div>
+                            <p class="stats__item">
+                                <span class="stats__num">28k</span>
+                                Awards
+                                Winning
+                            </p>
+                        </div>
+                        <div>
+                            <p class="stats__item">
+                                <span class="stats__num">2k</span>
+                                Happy
+                                Customer
+                            </p>
+                        </div>
+                        <div>
+                            <p class="stats__item">
+                                <span class="stats__num">9k</span>
+                                Premium
+                                Users
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="welcome__img-wrapper">
+                <img src="./images/cups/green-big.png" alt="" class="welcome__img">
+
+            </div>
+                
+            
+            
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+    <div>
+
+
+
+
 
 </body>
+
 </html>
