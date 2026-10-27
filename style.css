@@ -8,8 +8,13 @@ extrabold 800
 medium 500
 */
 
+
 * {
     box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 body {
@@ -43,6 +48,9 @@ a {
 }
 
 
+a:hover {
+    opacity: 0.8;
+}
 
 
 .btn {
@@ -55,6 +63,13 @@ a {
     font-size: 24px;
     letter-spacing: -0.02em;
     color: #fff;
+    transition: 2s;
+}
+
+.btn:hover {
+    color: #ffff;
+        background: linear-gradient(30deg, #237249 0%, #35c66b 100%);
+
 }
 
 .link {
@@ -218,6 +233,19 @@ a {
     padding-right: 250px;
 }
 
+.welcome__img-wrapper::before {
+    content: "";
+    width: 860px;
+    height: 620px;
+    position: absolute;
+    right: -25px;
+    bottom: -240px;
+    z-index: -10;
+    background-image: url(./images/icons/lines.svg);
+    background-size: contain;
+    background-position: center;
+}
+
 .welcome__img {
     width: 470px;
 }
@@ -226,8 +254,8 @@ a {
         content: "";
 
     position: absolute;
-    left: 40px;
-    top: 80px;
+    right: 40px;
+    bottom: 80px;
     z-index: -5;
 
     display: block;
@@ -235,6 +263,6 @@ a {
     height: 320px;
     border-radius: 100%;
     background: linear-gradient(267.2deg, rgba(39, 186, 110, 0.351) 20.73%, rgb(35, 162, 82) 52.81%);
-    filter: blur(200.5px);
+    filter: blur(100.05px);
 }
 
