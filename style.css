@@ -68,7 +68,7 @@ a:hover {
 
 .btn:hover {
     color: #ffff;
-        background: linear-gradient(30deg, #237249 0%, #35c66b 100%);
+    background: linear-gradient(30deg, #237249 0%, #35c66b 100%);
 
 }
 
@@ -144,9 +144,7 @@ a:hover {
 
 .main {}
 
-.welcome {
-    
-}
+.welcome {}
 
 .welcome .container {
     display: flex;
@@ -251,7 +249,7 @@ a:hover {
 }
 
 .welcome__img-wrapper::after {
-        content: "";
+    content: "";
 
     position: absolute;
     right: 40px;
@@ -266,3 +264,149 @@ a:hover {
     filter: blur(100.05px);
 }
 
+
+
+
+
+
+
+.benefits {
+    margin-top: 80px;
+}
+
+.benefits__container {
+    max-width: 1030px;
+    padding-top: 45px;
+    padding-bottom: 15px;
+    border-radius: 46px;
+    width: 1020px;
+    height: 375px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+
+    background: linear-gradient(264.52deg, #fff 5.07%, #e5e5e5 64.2%, #fbfbfb 88.34%);
+}
+
+.benefits__container::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 10px;
+    z-index: -5;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background: linear-gradient(245deg, rgba(35, 73, 0.55) 0%, rgba(53, 198, 107, 0.73));
+    filter: blur(100px);
+}
+
+.benefits__container::after {
+    content: "we\A have";
+    white-space: pre-wrap;
+    line-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    width: 180px;
+    height: 180px;
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: url("./images/icons/.star.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.benefits__badge {
+    white-space: pre-wrap;
+    line-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    width: 180px;
+    height: 180px;
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: url("./images/icons/star.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.benefits__item {
+    max-width: 220px;
+    text-align: center;
+}
+
+.benefits__img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+.benefits__img-wrapper::before {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 150px;
+
+    border-radius: 100%;
+    background: linear-gradient(267.2deg, #237249 20.73%, #35c66b 82.6%);
+    box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.39);
+}
+
+
+.benefits__icon {
+    width: 146px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+}
+
+
+.benefits__icon--heart {
+    top: calc(50% + 5px);
+    left: calc(50% + 5px);
+}
+
+.benefits__icon--rocket {
+    width: 200px;
+    top: calc(50% + 5px);
+    left: calc(50% + -15px);
+}
+
+.benefits__icon--money {
+    width: 200px;
+}
+
+
+.benefits__title {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 32px;
+    color: #121517;
+}
+
+.benefits__desc {
+    line-height: 163%;
+    color: rgba(18, 21, 23, 0.9);
+}
