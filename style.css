@@ -419,6 +419,7 @@ a:hover {
 
 .history {
     margin-top: 100px;
+    padding-bottom: 125px;
 }
 
 .history .container {
@@ -500,3 +501,80 @@ a:hover {
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 29%, 11% 0);
 }
 
+
+
+
+
+
+.products {
+margin-bottom: 90px;
+}
+
+.container {
+
+}
+
+.products__text {
+display: flex;
+align-items: center;
+
+}
+
+.products__title {
+width: 400px;
+height: 165;
+padding: 20px;
+}
+
+.text-gradient {
+
+}
+
+.products__desc {
+width: 450px;
+margin-left: 40px;
+}
+
+.products__cards {
+
+}
+
+.card {
+
+}
+
+.card__img-wrapper {
+
+}
+
+.card__img {
+
+}
+
+.card__title {
+
+}
+
+.card__desc {
+
+}
+
+.card__row {
+
+}
+
+.card__price {
+
+}
+
+.card__size {
+
+}
+
+.btn {
+
+}
+
+.card__btn {
+
+}
