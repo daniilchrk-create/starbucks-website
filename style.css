@@ -118,11 +118,9 @@ a:hover {
   width: 140px;
   height: 140px;
   border-radius: 100%;
-  background: linear-gradient(
-    245deg,
-    rgba(35, 114, 73, 0.11) 0%,
-    rgba(53, 198, 107, 0.73) 52.81%
-  );
+  background: linear-gradient(245deg,
+      rgba(35, 114, 73, 0.11) 0%,
+      rgba(53, 198, 107, 0.73) 52.81%);
   filter: blur(90px);
 }
 
@@ -157,7 +155,7 @@ a:hover {
   letter-spacing: -0.03em;
 }
 
-.header__link + .header__link {
+.header__link+.header__link {
   margin-left: 95px;
 }
 
@@ -173,11 +171,9 @@ a:hover {
   color: green;
 }
 
-.main {
-}
+.main {}
 
-.welcome {
-}
+.welcome {}
 
 .welcome .container {
   display: flex;
@@ -196,8 +192,7 @@ a:hover {
   color: #fff;
 }
 
-.title span {
-}
+.title span {}
 
 .welcome__title {
   margin-bottom: 55px;
@@ -215,11 +210,9 @@ a:hover {
   width: 320px;
   height: 320px;
   border-radius: 100%;
-  background: linear-gradient(
-    267.2deg,
-    rgba(35, 114, 73, 0.11) 20.73%,
-    rgba(53, 198, 107, 0.15) 52.81%
-  );
+  background: linear-gradient(267.2deg,
+      rgba(35, 114, 73, 0.11) 20.73%,
+      rgba(53, 198, 107, 0.15) 52.81%);
   filter: blur(90px);
 }
 
@@ -274,6 +267,7 @@ a:hover {
   background-image: url(./images/icons/lines.svg);
   background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .welcome__img {
@@ -292,11 +286,9 @@ a:hover {
   width: 320px;
   height: 320px;
   border-radius: 100%;
-  background: linear-gradient(
-    267.2deg,
-    rgba(39, 186, 110, 0.351) 20.73%,
-    rgb(35, 162, 82) 52.81%
-  );
+  background: linear-gradient(267.2deg,
+      rgba(39, 186, 110, 0.351) 20.73%,
+      rgb(35, 162, 82) 52.81%);
   filter: blur(100.05px);
 }
 
@@ -315,12 +307,10 @@ a:hover {
   display: flex;
   justify-content: space-around;
 
-  background: linear-gradient(
-    264.52deg,
-    #fff 5.07%,
-    #e5e5e5 64.2%,
-    #fbfbfb 88.34%
-  );
+  background: linear-gradient(264.52deg,
+      #fff 5.07%,
+      #e5e5e5 64.2%,
+      #fbfbfb 88.34%);
 }
 
 .benefits__container::before {
@@ -332,58 +322,39 @@ a:hover {
   width: 300px;
   height: 300px;
   border-radius: 100%;
-  background: linear-gradient(
-    245deg,
-    rgba(35, 73, 0.55) 0%,
-    rgba(53, 198, 107, 0.73)
-  );
+  background: linear-gradient(245deg,
+      rgba(35, 73, 0.55) 0%,
+      rgba(53, 198, 107, 0.73));
   filter: blur(100px);
 }
 
 .benefits__container::after {
-  content: "we\A have";
-  white-space: pre-wrap;
-  line-height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  content: "we\a have";
+  white-space: pre;
+  text-align: center;
   display: flex;
   align-items: center;
-  z-index: 10;
-  width: 180px;
-  height: 180px;
-  font-weight: 500;
-  font-size: 32px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  background-image: url("./images/icons/.star.svg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.benefits__badge {
-  white-space: pre-wrap;
-  line-height: 100%;
+  justify-content: center;
   position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
+  top: 15px;
+  left: 15px;
   z-index: 10;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   font-weight: 500;
   font-size: 32px;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
   color: #fff;
+  transform: translate(-50%, -50%);
   background-image: url("./images/icons/star.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  padding-left: 5px;
 }
+
+
 
 .benefits__item {
   max-width: 220px;
@@ -512,11 +483,9 @@ a:hover {
   width: 140px;
   height: 140px;
   border-radius: 100%;
-  background: linear-gradient(
-    267.2deg,
-    rgba(35, 114, 73, 0.11) 20.73%,
-    rgba(#237249) 52.81%
-  );
+  background: linear-gradient(267.2deg,
+      rgba(35, 114, 73, 0.11) 20.73%,
+      rgba(#237249) 52.81%);
   filter: blur(90px);
 }
 
@@ -555,12 +524,10 @@ a:hover {
   position: absolute;
   inset: -1px;
   background: rgb(218, 218, 218);
-  background: linear-gradient(
-    120deg,
-    rgba(218, 218, 218, 1) 0%,
-    rgba(218, 218, 218, 0.06%) 42%,
-    rgba(218, 218, 218, 1) 100%
-  );
+  background: linear-gradient(120deg,
+      rgba(218, 218, 218, 1) 0%,
+      rgba(218, 218, 218, 0.06%) 42%,
+      rgba(218, 218, 218, 1) 100%);
   border-radius: 30px;
   z-index: -5;
   transition: 3s;
@@ -568,11 +535,9 @@ a:hover {
 
 .card:hover::before {
   background: rgb(35, 114, 73);
-  background: linear-gradient(
-    260deg,
-    rgba(35, 114, 73, 1) 0%,
-    rgba(53, 198, 107, 1) 100%
-  );
+  background: linear-gradient(260deg,
+      rgba(35, 114, 73, 1) 0%,
+      rgba(53, 198, 107, 1) 100%);
 }
 
 .card:hover .card__img {
@@ -745,19 +710,23 @@ a:hover {
 
 .contacts .container {
   display: flex;
+  justify-content: space-between;
 }
+
 .contacts__text {
   width: 390px;
 }
 
 .contacts__title {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
-.text-gradient {
-}
+
+.text-gradient {}
+
 .contacts__desc {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
+
 .contacts__phone {
   font-weight: 500;
   font-size: 32px;
@@ -768,18 +737,38 @@ a:hover {
 }
 
 .contacts__phone::before {
-    content: "";
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    background-image: url(images/icons/phone.png);
-    background-size: contain;
-    background-position: center;
+  content: "";
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-image: url(images/icons/phone.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px;
 }
 
-.contacts__img-wrapper {
-}
+.contacts__img-wrapper {}
+
 .contacts__img-inner-wrapper {
+  position: relative;
 }
+
+.contacts__img-inner-wrapper::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -25px;
+  right: -35px;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%, 0 26%);
+  background: #237249;
+}
+
 .contacts__img {
+  width: 400px;
+  clip-path: polygon(32% 0, 100% 0, 100% 100%, 0 100%, 0 26%);
 }
+
+
+
