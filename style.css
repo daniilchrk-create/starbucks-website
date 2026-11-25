@@ -253,7 +253,7 @@ a:hover {
 }
 
 .welcome__img-wrapper {
-  padding-right: 250px;
+  
 }
 
 .welcome__img-wrapper::before {
@@ -272,6 +272,22 @@ a:hover {
 
 .welcome__img {
   width: 470px;
+  animation: moveCup 3.5s infinite alternate ease-in-out;
+}
+
+@keyframes moveCup {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateY(-40px);
+
+  }
 }
 
 .welcome__img-wrapper::after {
@@ -342,7 +358,7 @@ a:hover {
   width: 200px;
   height: 200px;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 30px;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
@@ -705,7 +721,7 @@ a:hover {
 
 
 .contacts {
-  margin-top: 150px;
+  margin-top: 180px;
 }
 
 .contacts .container {
@@ -725,11 +741,25 @@ a:hover {
 
 .contacts__desc {
   margin-bottom: 50px;
+  position: relative;
+}
+
+.contacts__desc::before {
+  content: "";
+  position: absolute;
+  left: 88px;
+  top: 58px;
+  z-index: -5;
+  width: 140px;
+  height: 110px;
+  border-radius: 100%;
+  background: linear-gradient(245deg, rgba(35, 114, 73, 0.11) 0%, rgba(53, 198, 107, 0.73) 51.85%);
+  filter: blur(90px);
 }
 
 .contacts__phone {
   font-weight: 500;
-  font-size: 32px;
+  font-size: 30px;
   gap: 20px;
   color: #fff;
   display: flex;
@@ -739,8 +769,8 @@ a:hover {
 .contacts__phone::before {
   content: "";
   display: inline-block;
-  width: 45px;
-  height: 45px;
+  width: 33px;
+  height: 33px;
   background-image: url(images/icons/phone.png);
   background-size: contain;
   background-position: center;
@@ -748,7 +778,37 @@ a:hover {
   padding: 10px;
 }
 
-.contacts__img-wrapper {}
+.contacts__img-wrapper {
+  position: relative;
+}
+
+.contacts__img-wrapper::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 20px;
+  z-index: -5;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  background: linear-gradient(245deg, rgba(35, 114, 73, 0.11) 0%, rgba(53, 198, 107, 0.73) 52.81%);
+  filter: blur(90px);
+}
+
+.contacts__img-wrapper::after {
+  content: "";
+  width: 920px;
+  height: 670px;
+  position: absolute;
+  right: -245px;
+  bottom: -360px;
+  z-index: -15;
+  background-image: url(./images/icons/lines.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(17deg);
+}
 
 .contacts__img-inner-wrapper {
   position: relative;
@@ -765,10 +825,32 @@ a:hover {
   background: #237249;
 }
 
+.contacts__img-inner-wrapper::after {
+  content: "we\a have";
+  white-space: pre;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 65px;
+  left: 50px;
+  z-index: 10;
+  width: 250px;
+  height: 230px;
+  font-weight: 500;
+  font-size: 37px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  background-image: url("./images/icons/star.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .contacts__img {
   width: 400px;
   clip-path: polygon(32% 0, 100% 0, 100% 100%, 0 100%, 0 26%);
 }
-
-
-
